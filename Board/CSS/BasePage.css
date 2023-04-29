@@ -1,0 +1,41 @@
+﻿.dMain {
+    text-align: center;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+
+.MainPageClass {
+    display: flex;
+}
+
+.InputForm {
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    margin-right: 1em;
+    font-weight: bold;
+    color: black;
+    background: #f7f7f7;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    display: none;
+}
+
+.MainDisplay {
+    width: 70%;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: black;
+    background: #f7f7f7;
+    border: solid 3px #6091d3;
+    border-radius: 10px;
+    display: none;
+}

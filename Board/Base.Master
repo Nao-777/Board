@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="Board.WebSite.Base" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/Css/BasePage.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bForm">
+    <form id="form1" runat="server">
+        <header class="header-main">
+            <h1>掲示板サイト</h1>
+            <div class="header-user-div">
+                <!--ログイン後に表示-->
+                <asp:ContentPlaceHolder ID="headerUser" runat="server">
+                    <!--マイページボタンの表示-->
+                </asp:ContentPlaceHolder>
+            </div>
+        </header>
+        <div class="dMain">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <!--それぞれのページで記述する-->
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+        </div>
+        <!--画面左が入力フォーム、右がデータ表示-->
+        <div class="MainPageClass">
+            <div class="InputForm">
+                <asp:ContentPlaceHolder ID="cInputForm" runat="server">
+                    <!--ユーザからの入力を取得する場所-->
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="MainDisplay">
+                <asp:ContentPlaceHolder ID="cMainDisplay" runat="server">
+                    <!--主に取得してきたデータを表示する場所-->
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
