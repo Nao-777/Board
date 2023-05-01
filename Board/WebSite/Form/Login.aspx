@@ -18,7 +18,7 @@
         <asp:LinkButton ID="lbLogin" runat="server" OnClick="lbLogin_Click" Text="ログインボタン" />
         <br />
         <br />
-        <!--<a href="">新規登録の方はこちら</a> -->
+        <a href="NewRegistration.aspx">新規登録の方はこちら</a>
         <br />
     </div>
 </asp:Content>

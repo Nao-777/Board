@@ -68,11 +68,38 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\BasePage.css" />
+    <Content Include="CSS\MainPage\ArticlEdition.css" />
+    <Content Include="CSS\MainPage\BulletinBoardPage.css" />
+    <Content Include="CSS\MainPage\InArticlPage.css" />
+    <Content Include="CSS\MainPage\ResEdit.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="WebSite\Form\Login.aspx" />
+    <Content Include="WebSite\Form\Logout.aspx" />
+    <Content Include="WebSite\Form\NewRegistration.aspx" />
+    <Content Include="WebSite\Form\NewRegistrationConfirmation.aspx" />
+    <Content Include="WebSite\MainPage\ArticlEdition.aspx" />
+    <Content Include="WebSite\MainPage\ArticlPage\InArticlPage.aspx" />
+    <Content Include="WebSite\MainPage\ArticlPage\ResEdit.aspx" />
+    <Content Include="WebSite\MainPage\BulletinBoardPage.aspx" />
+    <Content Include="WebSite\User\DeleteUserInformation\DeleteUserInformationPage.aspx" />
+    <Content Include="WebSite\User\MyPage.aspx" />
+    <Content Include="WebSite\User\RevisedUserInfomationPage\RevisedConfirmationPage.aspx" />
+    <Content Include="WebSite\User\RevisedUserInfomationPage\RevisedUserInfomation.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\SQL\BoardTable.cs" />
+    <Compile Include="App_Code\CommonMethod.cs" />
+    <Compile Include="App_Code\Constants.cs" />
+    <Compile Include="App_Code\ErrorMessage.cs" />
+    <Compile Include="App_Code\SQL\ResTable.cs" />
+    <Compile Include="App_Code\SessionManager.cs" />
+    <Compile Include="App_Code\SQL\SqlMethod.cs" />
+    <Compile Include="App_Code\UrlCreator.cs" />
+    <Compile Include="App_Code\SQL\UserTable.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -90,6 +117,83 @@
     </Compile>
     <Compile Include="WebSite\Form\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Form\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Form\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Form\NewRegistration.aspx.cs">
+      <DependentUpon>NewRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Form\NewRegistration.aspx.designer.cs">
+      <DependentUpon>NewRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Form\NewRegistrationConfirmation.aspx.cs">
+      <DependentUpon>NewRegistrationConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Form\NewRegistrationConfirmation.aspx.designer.cs">
+      <DependentUpon>NewRegistrationConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\MainPage\ArticlEdition.aspx.cs">
+      <DependentUpon>ArticlEdition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\MainPage\ArticlEdition.aspx.designer.cs">
+      <DependentUpon>ArticlEdition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\MainPage\ArticlPage\InArticlPage.aspx.cs">
+      <DependentUpon>InArticlPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\MainPage\ArticlPage\InArticlPage.aspx.designer.cs">
+      <DependentUpon>InArticlPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\MainPage\ArticlPage\ResEdit.aspx.cs">
+      <DependentUpon>ResEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\MainPage\ArticlPage\ResEdit.aspx.designer.cs">
+      <DependentUpon>ResEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\MainPage\BulletinBoardPage.aspx.cs">
+      <DependentUpon>BulletinBoardPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\MainPage\BulletinBoardPage.aspx.designer.cs">
+      <DependentUpon>BulletinBoardPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\User\DeleteUserInformation\DeleteUserInformationPage.aspx.cs">
+      <DependentUpon>DeleteUserInformationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\User\DeleteUserInformation\DeleteUserInformationPage.aspx.designer.cs">
+      <DependentUpon>DeleteUserInformationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\User\MyPage.aspx.cs">
+      <DependentUpon>MyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\User\MyPage.aspx.designer.cs">
+      <DependentUpon>MyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\User\RevisedUserInfomationPage\RevisedConfirmationPage.aspx.cs">
+      <DependentUpon>RevisedConfirmationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\User\RevisedUserInfomationPage\RevisedConfirmationPage.aspx.designer.cs">
+      <DependentUpon>RevisedConfirmationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\User\RevisedUserInfomationPage\RevisedUserInfomation.aspx.cs">
+      <DependentUpon>RevisedUserInfomation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\User\RevisedUserInfomationPage\RevisedUserInfomation.aspx.designer.cs">
+      <DependentUpon>RevisedUserInfomation.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

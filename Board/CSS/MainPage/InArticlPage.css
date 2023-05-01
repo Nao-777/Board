@@ -1,0 +1,62 @@
+﻿.mainPage {
+    display: flex;
+}
+
+.dMainArticl {
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.messages {
+    width: 60%;
+    margin-left: 5%
+}
+
+.message {
+    margin: 50px
+}
+
+.pLabelMessage {
+    display: flex;
+}
+
+.UserName {
+    margin-left: 10px;
+    margin-top: 0%;
+    width: 60%;
+}
+
+#pMessageNumber {
+    display: flex;
+    align-content: center;
+    width: 10%;
+}
+
+.Days {
+    margin-top: 0%;
+    width: 30%;
+}
+
+#dMessageForm {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: black; /*文字色*/
+    background-color: white;
+    border: solid 3px #6091d3; /*線*/
+    border-radius: 10px; /*角の丸み*/
+}
+
+.InputForm {
+    display: block;
+}
+
+.MainDisplay {
+    display: block;
+}

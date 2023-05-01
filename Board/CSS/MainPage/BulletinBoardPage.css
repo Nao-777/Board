@@ -1,0 +1,40 @@
+﻿.CreateArticl {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #FFF;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.Articl {
+    display: flex;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: black; /*文字色*/
+    background-color: white;
+    border: solid 3px #6091d3; /*線*/
+    border-radius: 10px; /*角の丸み*/
+}
+
+.MyPageButton {
+    text-align: center;
+}
+
+.TitleAndContents {
+    width: 80%;
+}
+
+.UserNameAndDays {
+    width: 20%;
+}
+
+.InputForm {
+    display: block;
+}
+
+.MainDisplay {
+    display: block;
+}
