@@ -71,8 +71,8 @@ Board
     - ArticlEdition.aspx:送信したスレを編集するページ
     - BulletinBoardPage.aspx:掲示板のメインページ。スレの一覧を表示する
   - User
-    -  DeleteUserInformation
-      -　DeleteUserInformationPage.aspx:退会するページ   
+    -  DeleteUserInformation  
+      - DeleteUserInformationPage.aspx:退会するページ   
     -  RevisedUserInfomationPage
       -  RevisedConfirmationPage.aspx:登録したユーザ情報（ユーザ名、ユーザＩＤ、ユーザパスワード）の変更確認ページ
       -  RevisedUserInfomation.aspx:登録したユーザ情報（ユーザ名、ユーザＩＤ、ユーザパスワード）の変更ページ  
