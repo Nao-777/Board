@@ -1,11 +1,87 @@
-﻿.dMain {
+﻿* {
+    box-sizing: border-box;
+}
+.dMain {
     text-align: center;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+/*入力ホーム全体*/
+.allForm {
+    width: 960px; /*横幅*/
+    margin: 0 auto; /*中央寄せ*/
+    padding: 60px 0;
+}
+.allForm-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/*入力ホームのレコードのデザイン*/
+.InputForm-Name,
+.InputForm-Contents {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.InputForm-Name {
+    text-align: left; /* テキスト左寄せ */
+    width: 30%; /* 横幅30%指定（グレーの背景色部分） */
+    background-color: #eee; /* グレーの背景色 */
+}
+.InputForm-Contents {
+    width: 70%; /* 横幅70%指定（白背景色部分） */
+}
+
+.form-text {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+
+/*ボタンテンプレ*/
+.btn_div {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background: #228bc8;
+    border: 1px solid #228bc8;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 0 45px 0 25px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    text-align: left;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+
+
+/*ヘッダータイトル*/
+.header-title{
+    text-align:center
 }
 
 .header-main {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
     background-color: aqua;
+    height:100px;
 }
 
 

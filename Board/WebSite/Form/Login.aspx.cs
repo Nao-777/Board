@@ -31,12 +31,15 @@ namespace Board.WebSite.Form
                     || string.IsNullOrEmpty(loginPassword)) pAlertMessage.InnerText = new ErrorMessage().errorMessage;
             else
             {
-                if (new UserTable().GetByLoginIDAndPassword(loginId, loginPassword,Constants.FIELD_USER_USER_ID) != null)
+                if (!string.IsNullOrEmpty(new UserTable().GetByLoginIDAndPassword(loginId, loginPassword, Constants.FIELD_USER_USER_ID)))
                 {
                     new SessionManager().Current.userID = new UserTable().GetByLoginIDAndPassword(loginId, loginPassword, Constants.FIELD_USER_USER_ID);
                     Response.Redirect(Constants.PATH_BOARD);
                 }
-                else pAlertMessage.InnerText = new ErrorMessage().errorMessage;
+                else
+                {
+                    pAlertMessage.InnerText = new ErrorMessage().errorMessage;
+                }
             }
         }
         /// <summary>セッション変数の中身の有無</summary>

@@ -17,12 +17,16 @@
             <br />
         <p id="pUserPassword" runat="server"></p>
         <br />
+    </div>
+    <div>
         <div>
             <p id="alertMsg" runat="server"></p>
         </div>
-        <br />
-        <a href="NewRegistration.aspx">キャンセル</a>
-        <br />
-        <asp:LinkButton ID="lbNewRegistrationButton" runat="server" onClick="lbNewRegistrationButton_Click" Text="登録" />
+        <div class="btn_div">
+            <a href="NewRegistration.aspx" class="btn">キャンセル</a>
+        </div>
+        <div class="btn_div">
+            <asp:LinkButton ID="lbNewRegistrationButton" CssClass="btn" runat="server" onClick="lbNewRegistrationButton_Click" Text="登録" />
+        </div>
     </div>
 </asp:Content>

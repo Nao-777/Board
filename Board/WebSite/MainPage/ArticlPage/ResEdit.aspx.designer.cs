@@ -24,15 +24,6 @@ namespace Board.WebSite.MainPage.ArticlPage
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pMessage;
 
         /// <summary>
-        /// pAlertMessage コントロール。
-        /// </summary>
-        /// <remarks>
-        /// 自動生成されたフィールド。
-        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pAlertMessage;
-
-        /// <summary>
         /// tbReMessage コントロール。
         /// </summary>
         /// <remarks>
@@ -40,6 +31,15 @@ namespace Board.WebSite.MainPage.ArticlPage
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbReMessage;
+
+        /// <summary>
+        /// pAlertMessage コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pAlertMessage;
 
         /// <summary>
         /// lbChangeMessage コントロール。

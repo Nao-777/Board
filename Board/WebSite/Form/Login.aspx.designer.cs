@@ -42,12 +42,12 @@ namespace Board.WebSite.Form
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pAlertMessage;
 
         /// <summary>
-        /// lbLogin コントロール。
+        /// testLink1 コントロール。
         /// </summary>
         /// <remarks>
         /// 自動生成されたフィールド。
         /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbLogin;
+        protected global::System.Web.UI.WebControls.LinkButton testLink1;
     }
 }

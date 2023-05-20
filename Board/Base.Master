@@ -13,7 +13,7 @@
 <body class="bForm">
     <form id="form1" runat="server">
         <header class="header-main">
-            <h1>掲示板サイト</h1>
+            <h1 class="header-title">掲示板サイト</h1>
             <div class="header-user-div">
                 <!--ログイン後に表示-->
                 <asp:ContentPlaceHolder ID="headerUser" runat="server">
@@ -25,6 +25,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <!--それぞれのページで記述する-->
             </asp:ContentPlaceHolder>
+            
         </div>
         <div>
         </div>
